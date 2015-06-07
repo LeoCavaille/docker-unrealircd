@@ -19,6 +19,7 @@ RUN curl https://www.unrealircd.org/downloads/Unreal3.2.10.4.tar.gz | tar xz && 
       --with-bufferpool=18 \
       --with-permissions=0600 \
       --with-fd-setsize=1024 \
+      --enable-ziplinks \
       --enable-dynamic-linking && \
     make && \
     make install && \
