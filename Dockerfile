@@ -27,7 +27,9 @@ RUN curl https://www.unrealircd.org/downloads/Unreal3.2.10.4.tar.gz | tar xz && 
     mv /etc/unrealircd/modules/* /usr/lib64/unrealircd/modules/ && \
     rm -rf Unreal3.2.10.4
 
+EXPOSE 6601
+EXPOSE 6667
 EXPOSE 6697
-EXPOSE 7000
+EXPOSE 7029
 
 CMD ["/usr/bin/unrealircd","-F"]
